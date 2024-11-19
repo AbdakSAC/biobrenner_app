@@ -1,0 +1,51 @@
+---
+import { ViewTransitions } from "astro:transitions";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Brenner Vera Sevilla</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style>
+  body {
+    background: transparent linear-gradient(0deg, #000000 0%, #414141 100%) 0%
+      0% no-repeat padding-box;
+    opacity: 1;
+    margin: 0;
+    height: 100vh;
+  }
+  @font-face {
+    font-family: Objective;
+    src: url(/fonts/Objective-Regular.otf);
+  }
+  @font-face {
+    font-family: ObjectiveMedium;
+    src: url(/fonts/Objective-Medium.otf);
+  }
+  @font-face {
+    font-family: ObjectiveBold;
+    src: url(/fonts/Objective-Bold.otf);
+  }
+  @font-face {
+    font-family: ObjectiveExtraBold;
+    src: url(/fonts/Objective-ExtraBold.otf);
+  }
+  @font-face {
+    font-family: ObjectiveLight;
+    src: url(/fonts/Objective-Light.otf);
+  }
+  @font-face {
+    font-family: ObjectiveThin;
+    src: url(/fonts/Objective-Thin.otf);
+  }
+</style>
