@@ -1,34 +1,9 @@
 ---
-const linkReferends = [
-  {
-    title: "Conviértete en un Generador 💡",
-    description:
-      "Únete a una comunidad de personas que transforman su pasión en ingresos seguros.",
-    link: "https://www.instagram.com/generamas.oficial/ ",
-  },
-  {
-    title: "Genera como Sport Trader Profesional 💹",
-    description:
-      "Curso completo de Arbitraje Deportivo para que empieces a aumentar tus ingresos.",
-    link: "https://brennervera.com/courses/ARBITRAJE%20DEPORTIVO",
-  },
-  {
-    title: "Modalidades de aprendizaje personalizadas 👨‍🏫",
-    description:
-      "Conoce las modalidades de aprendizaje que disponemos y escoge la mejor para ti.",
-    link: "https://wa.link/hzwyw9",
-  },
-  {
-    title: "Llénate de información semanal 💻",
-    description:
-      "Ingresa a mi canal de YouTube y obtén información de manera gratuita.",
-    link: "https://www.youtube.com/@brennerveraoficial",
-  },
-];
+import { CARDS } from "../consts/cards";
 ---
 
 {
-  linkReferends.map((item) => (
+  CARDS.map((item) => (
     <a href={item.link} target="_blank">
       <div class="flex flex-col items-center border-2 rounded-2xl py-[.58rem] px-4 sm:px-6 hover:opacity-75 hover:scale-105 transition-all duration-300 ease-in-out">
         <h3 class="font-[ObjectiveBold] text-center text-[#FFFFFF] text-xs sm:text-sm">
